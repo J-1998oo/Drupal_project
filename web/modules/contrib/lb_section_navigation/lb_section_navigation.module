@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Section navigation module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function lb_section_navigation_theme() {
+  return [
+    'section_navigation' => [
+      'variables' => [
+        'links' => [],
+      ],
+    ],
+  ];
+}

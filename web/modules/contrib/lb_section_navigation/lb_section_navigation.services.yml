@@ -1,0 +1,6 @@
+services:
+  lb_section_navigation.event_subscriber:
+    class: Drupal\lb_section_navigation\EventSubscriber\SectionNavigationSubscriber
+    arguments: ['@plugin.manager.layout_builder.section_storage']
+    tags:
+      - {name: event_subscriber}
